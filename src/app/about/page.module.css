@@ -1,0 +1,55 @@
+.container {
+    min-height: 80vh;
+    margin-bottom: 4rem;
+}
+
+.hero {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 4rem 1rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title {
+    color: var(--white);
+    font-size: 2.5rem;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.socials {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
