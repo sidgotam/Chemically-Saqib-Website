@@ -42,8 +42,15 @@ const FeaturedVideos = async () => {
                             title={video.title}
                             topic={video.topic}
                             // Handle both DB (youtubeId) and Static (id) structure or normalize them
-                            thumbnailUrl={getThumbnailUrl(video.youtubeId || video.id, video.type)}
-                            videoUrl={getVideoUrl(video.youtubeId || video.id, video.type)}
+                            thumbnailUrl={getThumbnailUrl(
+  (video as any).youtubeId || video.id,
+  video.type
+)}
+
+videoUrl={getVideoUrl(
+  (video as any).youtubeId || video.id,
+  video.type
+)}
                             customStyle={video.customStyle}
                         />
                     ))}
