@@ -6,7 +6,7 @@ import dbConnect from "@/lib/db";
 import Video from "@/models/Video";
 
 const FeaturedVideos = async () => {
-    let videos = [];
+    let videos: any[] = [];
     try {
         await dbConnect();
         // Fetch latest 3 videos from DB
